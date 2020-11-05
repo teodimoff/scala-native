@@ -345,7 +345,6 @@ class ClassReachabilitySuite extends ReachabilitySuite {
     val reachable = Seq(
       Test,
       TestInit,
-      TestMain,
       Parent,
       ParentMain,
       Object,
