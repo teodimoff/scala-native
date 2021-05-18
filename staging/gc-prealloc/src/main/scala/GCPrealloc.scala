@@ -12,8 +12,10 @@ object GCPrealloc {
 
     val stopTime = System.nanoTime()
 
+    val initialHeap = System.getProperty("GC_INITIAL_HEAP_SIZE")
+
     System.out.println(
-      s"Allocating $times TestAlloc objects takes: " + (stopTime - startTime) / 1000 / 1000 + " millis.")
+      s"Allocating $times with GC_INITIAL_HEAP_SIZE=$initialHeap TestAlloc objects takes: " + (stopTime - startTime) / 1000 / 1000 + " millis.")
 
   }
 
